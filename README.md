@@ -83,3 +83,31 @@ The size of data types in C can vary depending on the system architecture (e.g.,
 | **void**  | Does not occupy any memory. |
 
 These sizes are system-dependent and can be checked using the `sizeof` operator in C.
+
+# Format Specifiers in C
+
+Format specifiers are used in C to define the type of data being input or output. They are essential when using functions like `printf` and `scanf`.
+
+## Common Format Specifiers
+| Data Type       | Format Specifier | Example Usage                     |
+|------------------|------------------|-----------------------------------|
+| **int**         | `%d` or `%i`     | `printf("Age: %d", age);`         |
+| **float**       | `%f`             | `printf("PI: %f", pi);`           |
+| **double**      | `%lf`            | `printf("Distance: %lf", distance);` |
+| **char**        | `%c`             | `printf("Grade: %c", grade);`     |
+| **string**      | `%s`             | `printf("Name: %s", name);`       |
+| **unsigned int**| `%u`             | `printf("Count: %u", count);`     |
+| **long int**    | `%ld`            | `printf("Large Number: %ld", num);` |
+| **long long int**| `%lld`          | `printf("Very Large Number: %lld", num);` |
+| **unsigned long int** | `%lu`      | `printf("Unsigned Long: %lu", num);` |
+| **unsigned long long int** | `%llu`| `printf("Unsigned Very Long: %llu", num);` |
+| **hexadecimal** | `%x` or `%X`     | `printf("Hex: %x", value);`       |
+| **octal**       | `%o`             | `printf("Octal: %o", value);`     |
+| **pointer**     | `%p`             | `printf("Address: %p", ptr);`     |
+
+## Notes:
+- `%f` can also be used for `float` values, but for higher precision, `%lf` is used for `double`.
+- `%x` outputs hexadecimal in lowercase, while `%X` outputs it in uppercase.
+- Always ensure the format specifier matches the data type to avoid undefined behavior.
+
+Understanding format specifiers is crucial for effective input and output operations in C programs.
