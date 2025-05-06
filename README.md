@@ -8,7 +8,7 @@ C is a versatile and efficient programming language widely used for system-level
 
 The C compilation process transforms source code into an executable file. Below is a simplified diagram:
 
-![alt text](image.png)
+[Compination Process Image](image.png)
 
 ### Key Steps:
 | Step            | Description                                                                 |
@@ -31,7 +31,7 @@ C provides a variety of data types to handle different kinds of data. These data
 | **float** | Used to store single-precision floating-point numbers. | `float pi = 3.14;`         |
 | **double**| Used to store double-precision floating-point numbers. | `double distance = 12345.678;` |
 | **char**  | Used to store single characters.                | `char grade = 'A';`        |
-
+![alt text](image.png)
 ## Derived Data Types
 | Data Type   | Description                                                   | Example                              |
 |-------------|---------------------------------------------------------------|--------------------------------------|
@@ -111,3 +111,99 @@ Format specifiers are used in C to define the type of data being input or output
 - Always ensure the format specifier matches the data type to avoid undefined behavior.
 
 Understanding format specifiers is crucial for effective input and output operations in C programs.
+
+# Signed and Unsigned Data Types in C
+
+In C, data types can be either **signed** or **unsigned**, which determines whether they can represent negative values.
+
+## Signed Data Types
+- **Signed** data types can store both positive and negative values.
+- By default, most data types in C are signed.
+
+## Unsigned Data Types
+- **Unsigned** data types can only store non-negative values (0 and positive numbers).
+- They provide a larger range of positive values compared to their signed counterparts.
+
+## Formula to Calculate Range
+For a data type with `n` bits:
+- **Signed Range**: `-(2^(n-1))` to `(2^(n-1)) - 1`
+- **Unsigned Range**: `0` to `(2^n) - 1`
+
+## Range of Common Data Types
+| Data Type         | Size (in bits) | Signed Range                       | Unsigned Range                  |
+|--------------------|----------------|-------------------------------------|----------------------------------|
+| **char**          | 8              | `-128` to `127`                    | `0` to `255`                    |
+| **short int**      | 16             | `-32,768` to `32,767`              | `0` to `65,535`                 |
+| **int**           | 32             | `-2,147,483,648` to `2,147,483,647`| `0` to `4,294,967,295`          |
+| **long int**       | 32             | `-2,147,483,648` to `2,147,483,647`| `0` to `4,294,967,295`          |
+| **long long int**  | 64             | `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` | `0` to `18,446,744,073,709,551,615` |
+| **float**          | 32             | N/A (depends on IEEE 754 standard) | N/A                              |
+| **double**         | 64             | N/A (depends on IEEE 754 standard) | N/A                              |
+
+## Notes:
+- The ranges for floating-point types (`float` and `double`) depend on the IEEE 754 standard and are not calculated using the above formula.
+- Always use the `sizeof` operator to confirm the size of a data type on your specific system.
+
+Understanding signed and unsigned types is essential for selecting the appropriate data type for your application and avoiding overflow or underflow errors.
+
+# ASCII Values in C
+
+ASCII (American Standard Code for Information Interchange) is a character encoding standard that assigns a unique numerical value to each character, including letters, digits, punctuation marks, and control characters. These numerical values are known as ASCII values.
+
+## ASCII Table Overview
+- ASCII values range from 0 to 127.
+- Characters like `A`, `B`, `C`, etc., have corresponding ASCII values (e.g., `A` is 65, `B` is 66).
+- Control characters like newline (`\n`) and tab (`\t`) also have ASCII values.
+
+## Example of ASCII Values in C
+Below is a simple example to demonstrate how ASCII values work in C:
+
+```c
+#include <stdio.h>
+
+int main() {
+    char character = 'A'; // Character to find ASCII value
+    int asciiValue = character; // Implicit conversion to int
+
+    printf("The ASCII value of '%c' is %d\n", character, asciiValue);
+
+    // Loop through characters
+    printf("ASCII values of characters from 'A' to 'Z':\n");
+    for (char ch = 'A'; ch <= 'Z'; ch++) {
+        printf("'%c': %d\n", ch, ch);
+    }
+
+    return 0;
+}
+```
+
+### Output:
+```
+The ASCII value of 'A' is 65
+ASCII values of characters from 'A' to 'Z':
+'A': 65
+'B': 66
+'C': 67
+...
+'Z': 90
+```
+
+## Explanation
+1. **Character to ASCII Conversion**: In C, characters are internally stored as integers. Assigning a character to an integer variable or using it in an arithmetic operation automatically converts it to its ASCII value.
+2. **Looping Through Characters**: You can iterate through characters using a loop, as they are sequentially ordered in the ASCII table.
+
+## Practical Use Cases
+- **Character Manipulation**: Convert between uppercase and lowercase using ASCII arithmetic:
+  ```c
+  char upper = 'A';
+  char lower = upper + 32; // 'a' is 32 positions after 'A' in ASCII
+  printf("Lowercase of '%c' is '%c'\n", upper, lower);
+  ```
+- **Validation**: Check if a character is a digit, letter, or special symbol using ASCII ranges:
+  ```c
+  if (character >= '0' && character <= '9') {
+      printf("'%c' is a digit.\n", character);
+  }
+  ```
+
+Understanding ASCII values is fundamental for working with characters and strings in C programming.
