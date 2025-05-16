@@ -104,11 +104,11 @@ void main()
     // printf("Address: %s\n", address);
 
     // 4.Complex Number Addition
-    struct Complex
-    {
-        float real;
-        float image;
-    };
+    // struct Complex
+    // {
+    //     float real;
+    //     float image;
+    // };
 
     // struct Complex num1, num2, sum, mul;
 
@@ -124,11 +124,19 @@ void main()
     // sum.image = num1.image + num2.image;
     // printf("%.2f + %.2fi\n", sum.real, sum.image);
 
-
     // mul.real = (num1.real * num2.real) - (num1.image * num2.image);
     // mul.image = (num1.real * num2.image) + (num1.image * num2.real);
     // printf("%.2f + %.2fi", mul.real , mul.image);
 
-    
-
+    int n1 = 5, n2 = 3, n3 = 9;
+    if (n1 > n2 && n1 > n3)
+    {
+        printf("%d", n1);
+    }
+    else if (n2 > n1 && n2 > n3)
+    {
+        printf("%d", n2);
+    }else{
+        printf("%d",n3);
+    }
 }

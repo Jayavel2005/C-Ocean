@@ -207,3 +207,217 @@ ASCII values of characters from 'A' to 'Z':
   ```
 
 Understanding ASCII values is fundamental for working with characters and strings in C programming.
+
+# Strings in C
+
+Strings in C are arrays of characters terminated by a null character (`\0`). They are widely used for handling text and are essential for many programming tasks.
+
+## Declaring and Initializing Strings
+Strings can be declared and initialized in the following ways:
+
+### Example 1: Using Character Array
+```c
+char str[20] = "Hello, World!";
+```
+
+### Example 2: Using Pointer
+```c
+char *str = "Hello, World!";
+```
+
+### Example 3: Character-by-Character Initialization
+```c
+char str[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+```
+
+## Common String Functions
+The `<string.h>` library provides several functions for string manipulation:
+
+| Function          | Description                                      | Example Usage                              |
+|-------------------|--------------------------------------------------|-------------------------------------------|
+| `strlen(str)`     | Returns the length of the string (excluding `\0`). | `int len = strlen(str);`                  |
+| `strcpy(dest, src)` | Copies the string `src` into `dest`.            | `strcpy(dest, src);`                      |
+| `strcat(dest, src)` | Concatenates `src` to the end of `dest`.        | `strcat(dest, src);`                      |
+| `strcmp(str1, str2)` | Compares two strings lexicographically.        | `if (strcmp(str1, str2) == 0)`            |
+| `strchr(str, ch)` | Finds the first occurrence of `ch` in `str`.     | `char *pos = strchr(str, 'a');`           |
+| `strstr(str, substr)` | Finds the first occurrence of `substr` in `str`. | `char *pos = strstr(str, "World");`       |
+
+## Example Program
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char str1[20] = "Hello";
+  char str2[20] = "World";
+
+  // String concatenation
+  strcat(str1, ", ");
+  strcat(str1, str2);
+  printf("Concatenated String: %s\n", str1);
+
+  // String length
+  printf("Length of String: %lu\n", strlen(str1));
+
+  // String comparison
+  if (strcmp(str1, "Hello, World") == 0) {
+    printf("Strings are equal.\n");
+  } else {
+    printf("Strings are not equal.\n");
+  }
+
+  return 0;
+}
+```
+
+### Output:
+```
+Concatenated String: Hello, World
+Length of String: 12
+Strings are equal.
+```
+
+## Notes:
+1. Always ensure the destination array has enough space for operations like `strcpy` and `strcat` to avoid buffer overflows.
+2. Strings declared as pointers (e.g., `char *str`) are immutable, while those declared as arrays (e.g., `char str[]`) can be modified.
+
+Understanding strings and their associated functions is crucial for effective text processing in C programming.
+
+
+# Operators in C
+
+Operators in C are symbols that perform operations on variables and values. They are the building blocks of any C program and are used to manipulate data and variables.
+
+## Types of Operators
+C provides a rich set of operators, which can be categorized as follows:
+
+### 1. Arithmetic Operators
+Arithmetic operators are used to perform basic mathematical operations.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `+`      | Addition          | `a + b`         |
+| `-`      | Subtraction       | `a - b`         |
+| `*`      | Multiplication    | `a * b`         |
+| `/`      | Division          | `a / b`         |
+| `%`      | Modulus (remainder) | `a % b`       |
+
+### 2. Relational Operators
+Relational operators are used to compare two values.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `==`     | Equal to          | `a == b`        |
+| `!=`     | Not equal to      | `a != b`        |
+| `>`      | Greater than      | `a > b`         |
+| `<`      | Less than         | `a < b`         |
+| `>=`     | Greater than or equal to | `a >= b` |
+| `<=`     | Less than or equal to | `a <= b`   |
+
+### 3. Logical Operators
+Logical operators are used to combine conditional statements.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `&&`     | Logical AND       | `a && b`        |
+| `||`     | Logical OR        | `a || b`        |
+| `!`      | Logical NOT       | `!a`            |
+
+### 4. Bitwise Operators
+Bitwise operators perform operations on bits.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `&`      | Bitwise AND       | `a & b`         |
+| `|`      | Bitwise OR        | `a | b`         |
+| `^`      | Bitwise XOR       | `a ^ b`         |
+| `~`      | Bitwise Complement | `~a`           |
+| `<<`     | Left shift        | `a << 2`        |
+| `>>`     | Right shift       | `a >> 2`        |
+
+### 5. Assignment Operators
+Assignment operators are used to assign values to variables.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `=`      | Assign            | `a = b`         |
+| `+=`     | Add and assign    | `a += b`        |
+| `-=`     | Subtract and assign | `a -= b`      |
+| `*=`     | Multiply and assign | `a *= b`      |
+| `/=`     | Divide and assign | `a /= b`        |
+| `%=`     | Modulus and assign | `a %= b`       |
+
+### 6. Increment and Decrement Operators
+These operators are used to increase or decrease the value of a variable by 1.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `++`     | Increment         | `a++` or `++a`  |
+| `--`     | Decrement         | `a--` or `--a`  |
+
+### 7. Conditional (Ternary) Operator
+The conditional operator is a shorthand for `if-else` statements.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `? :`    | Ternary operator  | `a > b ? a : b` |
+
+### 8. Special Operators
+C also provides some special operators.
+
+| Operator | Description       | Example         |
+|----------|-------------------|-----------------|
+| `sizeof` | Returns the size of a variable or data type | `sizeof(int)` |
+| `&`      | Address-of operator | `&a`           |
+| `*`      | Dereference operator | `*ptr`        |
+| `->`     | Access structure members via pointer | `ptr->member` |
+| `.`      | Access structure members | `struct.member` |
+
+## Example Program
+```c
+#include <stdio.h>
+
+int main() {
+  int a = 10, b = 20, result;
+
+  // Arithmetic Operators
+  result = a + b;
+  printf("Addition: %d\n", result);
+
+  // Relational Operators
+  if (a < b) {
+    printf("a is less than b\n");
+  }
+
+  // Logical Operators
+  if (a > 0 && b > 0) {
+    printf("Both a and b are positive\n");
+  }
+
+  // Bitwise Operators
+  result = a & b;
+  printf("Bitwise AND: %d\n", result);
+
+  // Assignment Operators
+  a += b;
+  printf("After a += b, a = %d\n", a);
+
+  // Ternary Operator
+  result = (a > b) ? a : b;
+  printf("Larger value: %d\n", result);
+
+  return 0;
+}
+```
+
+### Output:
+```
+Addition: 30
+a is less than b
+Both a and b are positive
+Bitwise AND: 0
+After a += b, a = 30
+Larger value: 30
+```
+
+Understanding operators is essential for writing efficient and concise C programs. They allow you to perform a wide range of operations, from basic arithmetic to complex bitwise manipulations.

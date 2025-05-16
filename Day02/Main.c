@@ -5,293 +5,455 @@
 
 void main()
 {
-    // Feat to Metre
-    // float feet, meters;
-    // printf("Enter the Feet: ");
-    // scanf("%f", &feet);
-    // meters = siUnitOfFeet * feet;
-    // printf("%.2f feet = %f meters", feet, meters);
+     // Feat to Metre
+     // float feet, meters;
+     // printf("Enter the Feet: ");
+     // scanf("%f", &feet);
+     // meters = siUnitOfFeet * feet;
+     // printf("%.2f feet = %f meters", feet, meters);
 
-    // unsigned int integer;
-    // printf("Enter the Ineteger: ");
-    // scanf("%d", &integer);
-    // char character = integer; // This line implicity converts the integer to character
-    // printf("%c", character);
+     // unsigned int integer;
+     // printf("Enter the Ineteger: ");
+     // scanf("%d", &integer);
+     // char character = integer; // This line implicity converts the integer to character
+     // printf("%c", character);
 
-    // for (char character = 'A'; character <= 'Z'; character++)
-    // {
-    //     printf("%c = %d\n", character, character);
-    // }
+     // for (char character = 'A'; character <= 'Z'; character++)
+     // {
+     //     printf("%c = %d\n", character, character);
+     // }
 
-    // bmi calculation
-    // formula is w/m^2
-    // float weight , meter, bmi;
-    // printf("Enter the weight: ");
-    // scanf("%f", &weight);
-    // printf("Enter the meters: ");
-    // scanf("%f", &meter);
-    // meter = meter / 100;
-    // bmi = weight / (meter * meter);
-    // printf("%.2f", bmi);
+     // bmi calculation
+     // formula is w/m^2
+     // float weight , meter, bmi;
+     // printf("Enter the weight: ");
+     // scanf("%f", &weight);
+     // printf("Enter the meters: ");
+     // scanf("%f", &meter);
+     // meter = meter / 100;
+     // bmi = weight / (meter * meter);
+     // printf("%.2f", bmi);
 
-    // vote validation
-    // int age;
-    // printf("Enter the Age: ");
-    // scanf("%d", &age);
-    // printf(age >= 18 ? "Valid" : "not valid");
+     // vote validation
+     // int age;
+     // printf("Enter the Age: ");
+     // scanf("%d", &age);
+     // printf(age >= 18 ? "Valid" : "not valid");
 
-    // float a = 7.1;
-    // if (a >= 0)
-    // {
-    //     printf("%d", (int)(a + 0.5));
-    // }
-    // else
-    // {
-    //     printf("%d", (int)(a - 0.5));
-    // }
-    // int a = 5, b = 10;
-    // a = a ^ b;
-    // b = b ^ a;
-    // a = a ^ b;
-    // printf("a = %d, b = %d", a,b);
+     // float a = 7.1;
+     // if (a >= 0)
+     // {
+     //     printf("%d", (int)(a + 0.5));
+     // }
+     // else
+     // {
+     //     printf("%d", (int)(a - 0.5));
+     // }
+     // int a = 5, b = 10;
+     // a = a ^ b;
+     // b = b ^ a;
+     // a = a ^ b;
+     // printf("a = %d, b = %d", a,b);
 
-    // int cube = 1;
-    // int num = 7;
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     cube *= num;
-    // }
-    // printf("%d", cube);
+     // int cube = 1;
+     // int num = 7;
+     // for (int i = 0; i < 3; i++)
+     // {
+     //     cube *= num;
+     // }
+     // printf("%d", cube);
 
-    // float marketPrice, sellingPrice, profitOrLoss;
-    // scanf("%f %f", &marketPrice, &sellingPrice);
+     // float marketPrice, sellingPrice, profitOrLoss;
+     // scanf("%f %f", &marketPrice, &sellingPrice);
 
-    // if (marketPrice > sellingPrice)
-    // {
-    //     profitOrLoss = marketPrice - sellingPrice;
-    //     printf("Loss: %.2f%%\n",(profitOrLoss / marketPrice) * 100);
-    // }else if(sellingPrice > marketPrice){
-    //     profitOrLoss = sellingPrice - marketPrice;
-    //     printf("Profit: %.2f%%\n",(profitOrLoss / marketPrice) * 100);
-    // }
-    // else{
-    //     printf("There is no profit and loss");
-    // }
+     // if (marketPrice > sellingPrice)
+     // {
+     //     profitOrLoss = marketPrice - sellingPrice;
+     //     printf("Loss: %.2f%%\n",(profitOrLoss / marketPrice) * 100);
+     // }else if(sellingPrice > marketPrice){
+     //     profitOrLoss = sellingPrice - marketPrice;
+     //     printf("Profit: %.2f%%\n",(profitOrLoss / marketPrice) * 100);
+     // }
+     // else{
+     //     printf("There is no profit and loss");
+     // }
 
-    // printf("%c", 122);
+     // printf("%c", 122);
 
-    // int pin, enteredPin, choice;
-    // float balance = 1000.0, amount;
+     // int pin, enteredPin, choice;
+     // float balance = 1000.0, amount;
 
-    // pin = 1234;
-    // printf("Enter your PIN: ");
-    // scanf("%d", &enteredPin);
+     // pin = 1234;
+     // printf("Enter your PIN: ");
+     // scanf("%d", &enteredPin);
 
-    // if (enteredPin == pin)
-    // {
-    //     printf("\nPIN validated successfully.\n");
-    //     printf("\nATM Menu:\n");
-    //     printf("1. Check Balance\n");
-    //     printf("2. Deposit Money\n");
-    //     printf("3. Withdraw Money\n");
-    //     printf("4. Exit\n");
-    //     printf("Enter your choice: ");
-    //     scanf("%d", &choice);
+     // if (enteredPin == pin)
+     // {
+     //     printf("\nPIN validated successfully.\n");
+     //     printf("\nATM Menu:\n");
+     //     printf("1. Check Balance\n");
+     //     printf("2. Deposit Money\n");
+     //     printf("3. Withdraw Money\n");
+     //     printf("4. Exit\n");
+     //     printf("Enter your choice: ");
+     //     scanf("%d", &choice);
 
-    //     switch (choice)
-    //     {
-    //     case 1:
-    //         printf("Your account balance is: %.2f\n", balance);
-    //         break;
-    //     case 2:
-    //         printf("Enter the amount to deposit: ");
-    //         scanf("%f", &amount);
-    //         if (amount > 0)
-    //         {
-    //             balance += amount;
-    //             printf("Amount deposited successfully. New balance: %.2f\n", balance);
-    //         }
-    //         else
-    //         {
-    //             printf("Invalid amount. Please try again.\n");
-    //         }
-    //         break;
-    //     case 3:
-    //         printf("Enter the amount to withdraw: ");
-    //         scanf("%f", &amount);
-    //         if (amount > 0 && amount <= balance)
-    //         {
-    //             balance -= amount;
-    //             printf("Amount withdrawn successfully. New balance: %.2f\n", balance);
-    //         }
-    //         else if (amount > balance)
-    //         {
-    //             printf("Insufficient balance.\n");
-    //         }
-    //         else
-    //         {
-    //             printf("Invalid amount. Please try again.\n");
-    //         }
-    //         break;
-    //     case 4:
-    //         printf("Thank you for using the ATM. Goodbye!\n");
-    //         break;
-    //     default:
-    //         printf("Invalid choice. Please try again.\n");
-    //     }
-    // }
-    // else
-    // {
-    //     printf("Invalid PIN. Access denied.\n");
-    // }
+     //     switch (choice)
+     //     {
+     //     case 1:
+     //         printf("Your account balance is: %.2f\n", balance);
+     //         break;
+     //     case 2:
+     //         printf("Enter the amount to deposit: ");
+     //         scanf("%f", &amount);
+     //         if (amount > 0)
+     //         {
+     //             balance += amount;
+     //             printf("Amount deposited successfully. New balance: %.2f\n", balance);
+     //         }
+     //         else
+     //         {
+     //             printf("Invalid amount. Please try again.\n");
+     //         }
+     //         break;
+     //     case 3:
+     //         printf("Enter the amount to withdraw: ");
+     //         scanf("%f", &amount);
+     //         if (amount > 0 && amount <= balance)
+     //         {
+     //             balance -= amount;
+     //             printf("Amount withdrawn successfully. New balance: %.2f\n", balance);
+     //         }
+     //         else if (amount > balance)
+     //         {
+     //             printf("Insufficient balance.\n");
+     //         }
+     //         else
+     //         {
+     //             printf("Invalid amount. Please try again.\n");
+     //         }
+     //         break;
+     //     case 4:
+     //         printf("Thank you for using the ATM. Goodbye!\n");
+     //         break;
+     //     default:
+     //         printf("Invalid choice. Please try again.\n");
+     //     }
+     // }
+     // else
+     // {
+     //     printf("Invalid PIN. Access denied.\n");
+     // }
 
-    // int n = 7;
-    // int matchs = 0;
-    // while (n != 1){
-    //     if (n % 2 == 0 )
-    //     {
-    //         matchs += (n/2);
-    //         n /= 2;
-    //     }
-    //     else{
-    //         matchs += (n - 1) / 2;
-    //         n = (n - 1) / 2 + 1;
-    //     }
+     // int n = 7;
+     // int matchs = 0;
+     // while (n != 1){
+     //     if (n % 2 == 0 )
+     //     {
+     //         matchs += (n/2);
+     //         n /= 2;
+     //     }
+     //     else{
+     //         matchs += (n - 1) / 2;
+     //         n = (n - 1) / 2 + 1;
+     //     }
 
-    // }
-    // printf("%d", matchs);
+     // }
+     // printf("%d", matchs);
 
-    // printf("%d", 4==4==1);
+     // printf("%d", 4==4==1);
 
-    // int n = 1;
-    // int count = 0;
-    // if(n>=0 && n<=9){
-    //     count = 1;
-    //     printf("%d", count);
-    //     return ;
-    // }
-    // while (n > 0)
-    // {
-    //     n/=10;
-    //     count++;
-    // }
-    // printf("%d", count);
+     // int n = 1;
+     // int count = 0;
+     // if(n>=0 && n<=9){
+     //     count = 1;
+     //     printf("%d", count);
+     //     return ;
+     // }
+     // while (n > 0)
+     // {
+     //     n/=10;
+     //     count++;
+     // }
+     // printf("%d", count);
 
-    // int a = 56;
-    // int b = 20;
-    // int q;
+     // int a = 56;
+     // int b = 20;
+     // int q;
 
-    // int i;
-    // for(i = 1;i<=5;i++){
-    //     printf("%d", i);
-    //     i = i + 1;
+     // int i;
+     // for(i = 1;i<=5;i++){
+     //     printf("%d", i);
+     //     i = i + 1;
 
-    // }
-    int n , sum = 0;
-        scanf("%d", &n);
-        for(int i = 1; i<=n;i++){
-            sum = sum + i;
-            printf("Iteration %d =  Sum : %d\n",i,sum);
-        }
-        printf("\n%d", sum);
+     // }
+     // int n , sum = 0;
+     //     scanf("%d", &n);
+     //     for(int i = 1; i<=n;i++){
+     //         sum = sum + i;
+     //         printf("Iteration %d =  Sum : %d\n",i,sum);
+     //     }
+     //     printf("\n%d", sum);
 
-    int i = 0;
-    while (i<= 100)
-    {
-        printf("%d ",i);
-        i++;
-    }
+     // int i = 0;
+     // while (i<= 100)
+     // {
+     //     printf("%d ",i);
+     //     i++;
+     // }
 
-    int n;
-    scanf("%d", &n);
-    for (int i = 0; i <= n; i++)
-    {
-        i % 2 == 0 ? printf("%d is Even\n", i) : printf("%d is Odd\n", i);
-    }
+     // int n;
+     // scanf("%d", &n);
+     // for (int i = 0; i <= n; i++)
+     // {
+     //     i % 2 == 0 ? printf("%d is Even\n", i) : printf("%d is Odd\n", i);
+     // }
 
-    int n;
-    scanf("%d", &n);
-    for (int i = 1; i <=n; i++)
-    {
-        if(i % 5 == 0){
-            printf("%d is Divisible by 5",i);
-        }
-    }
+     // int n;
+     // scanf("%d", &n);
+     // for (int i = 1; i <=n; i++)
+     // {
+     //     if(i % 5 == 0){
+     //         printf("%d is Divisible by 5",i);
+     //     }
+     // }
 
-    int n;
-    scanf("%d", &n);
-    for(int i = 1;i<=n;i++){
-        printf("%d\n", i * i);
-    }
+     // int n;
+     // scanf("%d", &n);
+     // for(int i = 1;i<=n;i++){
+     //     printf("%d\n", i * i);
+     // }
 
-    int n , fact = 1;
+     // int n , fact = 1;
 
-    scanf("%d", &n);
-    if(n == 0 || n == 1){
-        printf("%d", fact);
-        return;
-    }
+     // scanf("%d", &n);
+     // if(n == 0 || n == 1){
+     //     printf("%d", fact);
+     //     return;
+     // }
 
-    for (int i = 1; i <= n; i++)
-    {
-        fact *= i;
-    }
-    printf("%d", fact);
+     // for (int i = 1; i <= n; i++)
+     // {
+     //     fact *= i;
+     // }
+     // printf("%d", fact);
 
-    int num, originalNum, remainder, result = 0, n = 0;
+     // int num, originalNum, remainder, result = 0, n = 0;
 
-    printf("Enter an integer: ");
-    scanf("%d", &num);
+     // printf("Enter an integer: ");
+     // scanf("%d", &num);
 
-    originalNum = num;
+     // originalNum = num;
 
-    
-    while (originalNum != 0)
-    {
-        originalNum /= 10;
-        n++;
-    }
+     // while (originalNum != 0)
+     // {
+     //     originalNum /= 10;
+     //     n++;
+     // }
 
-    originalNum = num;
+     // originalNum = num;
 
-    while (originalNum != 0)
-    {
-        remainder = originalNum % 10;
-        result += pow(remainder, n);
-        originalNum /= 10;
-    }
+     // while (originalNum != 0)
+     // {
+     //     remainder = originalNum % 10;
+     //     result += pow(remainder, n);
+     //     originalNum /= 10;
+     // }
 
-    if (result == num)
-        printf("%d is an Armstrong number.\n", num);
-    else
-        printf("%d is not an Armstrong number.\n", num);
-        
-    int n, isPrime = 1;
+     // if (result == num)
+     //     printf("%d is an Armstrong number.\n", num);
+     // else
+     //     printf("%d is not an Armstrong number.\n", num);
+     // int n, isPrime = 1;
 
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
+     // printf("Enter a positive integer: ");
+     // scanf("%d", &n);
 
-    if (n <= 1)
-    {
-        isPrime = 0;
-    }
-    else
-    {
-        for (int i = 2; i <= sqrt(n); i++)
-        {
-            if (n % i == 0)
-            {
-                isPrime = 0;
-                break;
-            }
-        }
-    }
+     // if (n <= 1)
+     // {
+     //     isPrime = 0;
+     // }
+     // else
+     // {
+     //     for (int i = 2; i <= sqrt(n); i++)
+     //     {
+     //         if (n % i == 0)
+     //         {
+     //             isPrime = 0;
+     //             break;
+     //         }
+     //     }
+     // }
 
-    if (isPrime)
-        printf("%d is a prime number.\n", n);
-    else
-        printf("%d is not a prime number.\n", n);
+     // if (isPrime)
+     //     printf("%d is a prime number.\n", n);
+     // else
+     //     printf("%d is not a prime number.\n", n);
+
+     // int n = 56;
+     // while (n!=1){
+     //     n/=2;
+     // }
+     // printf("%d",n);
+
+     // int num, reversedNum = 0, remainder, originalNum;
+
+     // printf("Enter an integer: ");
+     // scanf("%d", &num);
+
+     // originalNum = num;
+
+     // while (num != 0)
+     // {
+     //     remainder = num % 10;
+     //     reversedNum = reversedNum * 10 + remainder;
+     //     num /= 10;
+     // }
+
+     // if (originalNum == reversedNum)
+     //     printf("%d is a palindrome number.\n", originalNum);
+     // else
+     //     printf("%d is not a palindrome number.\n", originalNum);
+
+     // int num, sum = 0, remainder;
+
+     // printf("Enter an integer: ");
+     // scanf("%d", &num);
+
+     // while (num != 0)
+     // {
+     //     remainder = num % 10;
+     //     sum += remainder;
+     //     num /= 10;
+     // }
+
+     // printf("Sum of digits: %d\n", sum);
+
+     // int n, sum = 0;
+     // while (n!=0)
+     // {
+     //     printf("Enter the number: ");
+     //     scanf("%d", &n);
+     //     sum += n;
+
+     // }
+     // printf("Final Sum: %d", sum);
+
+     //    int i = 2;
+     //    int n;
+     //    int f = 0;
+     //    int s = 1;
+     //    int fib = 0;
+     //    scanf("%d", &n);
+     //    printf("%d %d ", f, s);
+     //    while (i<=n)
+     //    {
+     //         fib = f + s;
+     //         printf("%d ",fib);
+     //         f = s;
+     //         s = fib;
+
+     //         i++;
+     //    }
+
+     // for(int i = 1;i<=2;i++){
+     //      for(int j = 1;j<=2;j++){
+     //           printf("%d ", j);
+     //      }
+     //      printf("\n");
+     // }
+
+     int rows;
+     printf("Enter the number of rows: ");
+     scanf("%d", &rows);
+
+     // for (int i = rows; i >= 1; i--)
+     // {
+     //      for (int j = 1; j <= i; j++)
+     //      {
+     //           printf("* ");
+     //      }
+     //      printf("\n");
+     // }
+
+     // for (int i = 1; i <= rows; i++)
+     // {
+     //      for (int j = 1; j <= rows - i; j++)
+     //      {
+     //           printf(" ");
+     //      }
+     //      for (int k = 1; k <= 2 * i - 1; k++)
+     //      {
+     //           printf("*");
+     //      }
+     //      printf("\n");
+     // }
+
+//      for (int i = 1; i <= rows; i++)
+//      {
+//           for (int j = 1; j <= rows - i; j++)
+//           {
+//                printf(" ");
+//           }
+//           for (int k = 1; k <= 2 * i - 1; k++)
+//           {
+//                printf("*");
+//           }
+//           printf("\n");
+//      }
 
 
-    
-}
+//      for (int i = rows - 1; i >= 1; i--)
+//      {
+//           for (int j = 1; j <= rows - i; j++)
+//           {
+//                printf(" ");
+//           }
+//           for (int k = 1; k <= 2 * i - 1; k++)
+//           {
+//                printf("*");
+//           }
+//           printf("\n");
+//      }
+
+
+//      printf("-----------------------------------------------------------\n");
+
+
+//      for (int i = rows - 1; i >= 1; i--)
+//      {
+//           for (int j = 1; j <= rows - i; j++)
+//           {
+//                printf(" ");
+//           }
+//           for (int k = 1; k <= 2 * i - 1; k++)
+//           {
+//                printf("*");
+//           }
+//           printf("\n");
+//      }
+//      for (int i = 1; i <= rows; i++)
+//      {
+//           for (int j = 1; j <= rows - i; j++)
+//           {
+//                printf(" ");
+//           }
+//           for (int k = 1; k <= 2 * i - 1; k++)
+//           {
+//                printf("*");
+//           }
+//           printf("\n");
+//      }
+
+//      int num = 1;
+//      for (int i = 1; i <= rows; i++)
+//      {
+//           for (int j = 1; j <= i; j++)
+//           {
+//                printf("%d ", num);
+//                num++;
+//           }
+//           printf("\n");
+//      }
+// }
+
