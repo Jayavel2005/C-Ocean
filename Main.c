@@ -631,7 +631,6 @@
 //     printf("First string: %s\n", str1);
 //     printf("Second string: %s\n", str2);
 
-
 //     int freq1[256] = {0}, freq2[256] = {0};
 //     for (int i = 0; str1[i] != '\0'; i++) {
 //         freq1[(unsigned char)str1[i]]++;
@@ -654,22 +653,49 @@
 
 #include <stdio.h>
 
-void main(){
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main()
+{
+    // int a = 10;
+    // int *p;
+    // p = &a;
+    // *p = 20;
+    // printf("%d", *p);
+
+    // printf("%d", a);
+
+    // int a = 10, b = 20;
+    // int *p1 = &a, *p2 = &b;
+    // printf("Before swap: a = %d, b = %d\n", a, b);
+
+    // int temp = *p1;
+    // *p1 = *p2;
+    // *p2 = temp;
+
+    // printf("After swap: a = %d, b = %d\n", a, b);
+    // int a = 10, b = 5;
+    // printf("%d %d", a, b);
+    // swap(&a, &b);
+    // printf("\n%d %d", a, b);
+
+    int arr[] = {1,3,3};
+    int *arrPointer = arr;
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%d\n", *(arrPointer + i));
+    }
+
     int a = 10;
-    int *p;
-    p = &a;
-    *p = 20;
-    printf("%d", *p);
-
-    printf("%d", a);
-
-    int a = 10, b = 20;
-    int *p1 = &a, *p2 = &b;
-    printf("Before swap: a = %d, b = %d\n", a, b);
-
-    int temp = *p1;
-    *p1 = *p2;
-    *p2 = temp;
-
-    printf("After swap: a = %d, b = %d\n", a, b);
+    int *p = &a;
+    int **pp = &p;
+    printf("%d\n", &a);
+    printf("%p\n", p);
+    printf("%p", *pp);
+    
 }
